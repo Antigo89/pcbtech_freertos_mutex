@@ -47,7 +47,7 @@
  </TraceWindow>
  <Watch1>
   <Watches active="1" update="Each Second">
-   <Watchpoint expression="time_delay" name="time_delay" radix="16" linenumber="72" filename="main.c"/>
+   <Watchpoint expression="time_delay" name="time_delay" radix="16" linenumber="74" filename="main.c"/>
   </Watches>
  </Watch1>
  <Watch2>
@@ -60,12 +60,12 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="62" useTextEdit="1" path="main.c" left="0" selected="1" top="48" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="41" y="65" useTextEdit="1" path="main.c" left="0" selected="1" top="39" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="36" y="22" useTextEdit="1" path="Setup/usart_dbg.c" left="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="1" y="3" useTextEdit="1" path="Setup/usart_dbg.h" left="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="11" useTextEdit="1" path="Setup/rng.c" left="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="74" y="81" useTextEdit="1" path="FreeRTOS/FreeRTOSConfig.h" left="0" top="51" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="13" y="4" useTextEdit="1" path="Setup/rng.h" left="0" top="0" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="Task_8" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Proj/ARM/Kurs_STM32/week15/Setup" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="Task_8" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Proj/ARM/Kurs_STM32/week15/Setup" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

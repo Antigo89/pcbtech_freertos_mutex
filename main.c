@@ -54,9 +54,10 @@ SemaphoreHandle_t mutex_usart1;
 
 void vTask1Sec(void * pvParameters){
   while(1){
-    xSemaphoreTake(mutex_usart1, SEMAPHORE_TIMEOUT);
-    usart1_send_str("Task 1 working\n");
-    xSemaphoreGive(mutex_usart1);
+    if(xSemaphoreTake(mutex_usart1, SEMAPHORE_TIMEOUT)==pdTRUE){
+      usart1_send_str("Task 1 working\n");
+      xSemaphoreGive(mutex_usart1);
+    }
     vTaskDelay(1000);
   }
   vTaskDelete(NULL);
@@ -64,9 +65,10 @@ void vTask1Sec(void * pvParameters){
 
 void vTaskRandomSec(void * pvParameters){
   while(1){
-    xSemaphoreTake(mutex_usart1, SEMAPHORE_TIMEOUT);
-    usart1_send_str("Task 2 working\n");
-    xSemaphoreGive(mutex_usart1);
+    if(xSemaphoreTake(mutex_usart1, SEMAPHORE_TIMEOUT)==pdTRUE){
+      usart1_send_str("Task 2 working\n");
+      xSemaphoreGive(mutex_usart1);
+    }
     uint32_t time_delay = ((float)rng_random() / RNG_RANDOM_MAX)*2000 + 1000;
     vTaskDelay(time_delay);
   }
